@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/bootstrap.css"/>
+  <link rel="stylesheet" href="css/user_register.css"/>
+  <script src="js/common.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/user_register.js"></script>
+  <title></title>
+</head>
+<body>
+<div class="user-register">
+  <!--<div class="top">
+    <div class="top-container">
+      <div class="top-left">欢迎进入工艺陶瓷公司官方网站</div>
+      <div class="top-right">
+        <span><a href="/user-login.html">登录</a></span>
+        <span><a href="/user-register.html">注册</a></span>
+      </div>
+    </div>
+    </div>
+    -->
+  <iframe class="header" src="header.html" frameborder="0"></iframe>
+  <!--注册框-->
+  <div class="section">
+    <div class="section-register">
+      <form>
+        <table>
+          <tr>
+            <td><h5>新用户注册</h5></td>
+            <td><a href="user_login.html"><h6>直接登录</h6></a></td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <div>
+                <img src="img/register_uname.png" alt=""/>
+                <input id="uname" type="text" placeholder="请输入您的用户名" class="login-input-uname" name="uname" autocomplete="off" onfocus="uname_focus()" onblur="uname_blur()"/>
+              </div>
+              <span class="allspan" id="inuname"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <div>
+                <img src="img/register_password.png" alt=""/>
+                <input type="password" placeholder="请输入您的密码" class="login-input-upwd" name="upwd" id="upwd" onblur="checkupwd()"/>
+              </div>
+              <span class="allspan" id="inupwd"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <div>
+                <img src="img/register_password.png" alt=""/>
+                <input type="password" placeholder="请再次输入您的密码" class="login-input-cpwd" name="cpwd" id="cpwd" onblur="checkpwd()"/>
+              </div>
+              <span class="allspan" id="incpwd"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <div>
+                <img src="img/register_email.png" alt=""/>
+                <input type="text" placeholder="请输入您的邮箱" class="login-input-upwd" name="email" id="email" onblur="checkemail()"/>
+              </div>
+              <span class="allspan" id="inemail"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <div>
+                <img src="img/register_phone.png" alt=""/>
+                <input type="text" placeholder="请输入您的手机号" class="login-input-upwd" name="phone" id="phone" onblur="checkphone()"/>
+              </div>
+              <span class="allspan" id="inphone"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2px">
+              <input type="button" value="注册" class="button" onclick="post_Msg()"/>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </div>
+  <iframe class="footer" src="footer.html" frameborder="0"></iframe>
+</div>
+</body>
+</html>

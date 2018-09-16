@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/user_login.css"/>
+    <script src="js/common.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/user_login.js"></script>
+</head>
+<body>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">提示</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <p>该用户尚未注册，是否注册？</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" onclick="sure()">确定</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+  <!--最上面-->
+  <div class="user-login">
+      <iframe class="header" src="header.html" frameborder="0"></iframe>
+      <!--<div class="top">
+          <div class="top-container">
+              <div class="top-left">欢迎进入工艺陶瓷公司官方网站</div>
+              <div class="top-right">
+                  <span><a href="/user-login.html">登录</a></span>
+                  <span><a href="/user-register.html">注册</a></span>
+              </div>
+          </div>
+      </div>-->
+  <!--中间登录-->
+  <div class="section">
+      <div class="section-login">
+          <form method="post" action="/user/login">
+              <table>
+                  <tr>
+                      <td><h5>登录</h5></td>
+                      <td><a href="user_register.html"><h6>新用户注册</h6></a></td>
+                  </tr>
+                  <tr>
+                      <td colspan="2px">
+                          <div>
+                              <img src="img/register_uname.png" alt=""/>
+                              <input id="uname" type="text" placeholder="请输入您的用户名" class="login-input-uname" name="uname" autocomplete="off" onfocus="uname_focus()" onblur="uname_blur()"/>
+                          </div>
+                          <span class="allspan" id="inuname"></span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2px">
+                          <div>
+                              <img src="img/register_password.png" alt=""/>
+                              <input type="password" placeholder="请输入您的密码" class="login-input-upwd" name="upwd" id="upwd" onfocus="upwd_focus()" onblur="upwd_blur()"/>
+                          </div>
+                          <span class="allspan" id="inupwd"></span>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2px">
+                          <a href="#">忘记密码？</a>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td colspan="2px">
+                          <input id="login-botton" type="button" value="登录" class="button" onclick="deng_Lu()"/>
+                      </td>
+                  </tr>
+              </table>
+          </form>
+      </div>
+  </div>
+
+      <!--最下面-->
+   <!--<div class="footer">
+       <div class="footer1">
+           <img src="img/footer1.png" alt=""/>
+           <span>
+               <h3>工艺陶瓷</h3>
+               <p>Process ceramics</p>
+           </span>
+       </div>
+       <div class="footer2">
+           <span><a href="#">网站首页</a></span>
+           <span><a href="#">关于我们</a></span>
+           <span><a href="#">产品中心</a></span>
+           <span><a href="#">客户案例</a></span>
+           <span><a href="#">新闻资讯</a></span>
+           <span><a href="#">招商加盟</a></span>
+           <span><a href="#">联系我们</a></span>
+       </div>
+       <div class="footer3">
+           <p>版权所有 © 工艺陶瓷  &nbsp; 保留一切权利。浙ICP备XXXXXXXXX号-2 &nbsp;&nbsp;</p>
+           <p>地址：中国杭州市XXXX区杭XXXXX嘉华XXX 商务中心XXXX楼 &nbsp; &nbsp; &nbsp; 电话：0571－XXXXXX&nbsp; &nbsp; &nbsp;QQ：XXXXXXX&nbsp; &nbsp; &nbsp; &nbsp; 邮编：XXXXXX</p>
+           <p>图片均来源互联网，仅供学习和交流，请勿商用</p>
+       </div>
+   </div>-->
+      <iframe class="footer" src="footer.html" frameborder="0"></iframe>
+  </div>
+</body>
+</html>

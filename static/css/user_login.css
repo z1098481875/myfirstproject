@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+iframe.header{
+    width:100%;
+    height:33px;
+    vertical-align: bottom;
+}
+/*
+.user-login .top{
+     background:#303030;
+     width:100%;
+     height:32px;
+     padding:0 40px;
+     box-sizing: border-box;
+}
+.top-container{
+    max-width: 1200px;
+    margin:0 auto;
+}
+ .user-login .top .top-left{
+     float:left;
+     color:white;
+     font-size:14px;
+     text-align: center;
+     line-height:32px;
+ }
+ .user-login .top .top-right{
+     float:right;
+     text-align: center;
+     line-height:32px;
+ }
+.user-login .top .top-right a{
+    color:white;
+    font-size:14px;
+    text-decoration: none;
+    padding: 0 5px;
+}*/
+.user-login .section{
+    width:100%;
+    height:600px;
+    background-image: url(../img/login_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+}
+.section:before{
+    content:"";
+    display:block;
+    clear:both;
+}
+.section-login{
+    width:350px;
+    height:300px;
+    background:rgba(255,255,255,0.8);
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right:100px;
+}
+.user-login .section form table{
+    vertical-align: middle;
+    border-spacing:15px;
+    width:250px;
+    margin:30px auto;
+    border-collapse: collapse;
+}
+.user-login .section form table tr:nth-child(1) td{
+    padding-bottom: 10px;
+}
+.user-login .section form table tr:nth-child(1) td:nth-child(2){
+    text-align:right;
+}
+.user-login .section form table tr:first-child td:nth-child(2) a{
+    color:#5a5a5a;
+}
+.user-login .section form table tr td div{
+    position:relative;
+    border:1px solid #888;
+    height:30px;
+    border-radius: 4px;
+}
+.user-login .section form table tr td div img{
+    width:20px;
+    height:20px;
+}
+.user-login .section form table tr td div input{
+    box-sizing: border-box;
+    width:100%;
+    height:30px;
+    outline:none;
+    position:absolute;
+    border:0;
+    background:transparent;
+    margin-left: 5px;
+    line-height: 30px;
+}
+.user-login .section form table tr:nth-child(4) td{
+    text-align: right;
+    padding-bottom: 10px;
+}
+.user-login .section form table tr:nth-child(4) td a{
+    color:#303D79;
+}
+.user-login .section form table tr td input.button{
+    border:0;
+    width:100%;
+    height:30px;
+    background:#768491;
+    color:#fff;
+    border-radius: 4px;
+}
+.user-login .section form table tr td .allspan{
+    font-size: 12px;
+    color:#f10215;
+    margin-left: 25px;
+}
+.footer{
+    background: #303030;
+    box-sizing: border-box;
+}
+.footer .footer1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer1 img{
+    width:50px;
+    height:50px;
+}
+.footer .footer1 span{
+    margin-left: 15px;
+    font-size:20px;
+    color:#CCCCCC;
+}
+.footer .footer1 span p{
+    font-size: 12px;
+    font-family: Arial;
+    color:#999999
+}
+.footer .footer2{
+    box-sizing: border-box;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    color:#CCCCCC;
+    margin:20px auto;
+}
+.footer .footer2 span a{
+    color:#ccc;
+    font-size:14px;
+}
+.footer .footer3{
+    text-align: center;
+    font-size: 12px;
+    color:#ccc;
+}
+.footer .footer3 p{
+    margin-bottom: 10px;
+}
+iframe.footer {
+    width: 100%;
+    height: 295px;
+    vertical-align: bottom;
+}
+@media screen and (min-width: 992px){
+    iframe.footer{
+        width:100%;
+        margin:0 auto;
+    }
+}
+@media screen and (max-width: 690px){
+    iframe.footer{
+        height:255px;
+        margin:0 auto;
+    }
+}
+
+
